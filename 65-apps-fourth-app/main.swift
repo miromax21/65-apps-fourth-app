@@ -11,11 +11,11 @@ import Foundation
 print("Hello, World!")
 class App{
     func checkLogin(login:String) {
-//let logintest = Validation.shared.isLogin(login: login)
         if let logintest = Validation.shared.isLogin(login: login), logintest != login {
             print(logintest)
             return
         }
+        print("this login can be used")
     }
 }
 print("enter the user name")
